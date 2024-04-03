@@ -133,7 +133,7 @@
 
     .rodape__container {
         font-size: 1.3em;
-        height: 20vh;
+        height: 35vh;
 
     }
 
@@ -144,6 +144,15 @@
     .rodape__container {
         padding-bottom: initial;
 
+    }
+
+    .bairros__titulo{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .bairros__lista{
+        height: 250px;
     }
 
     @keyframes pulsar {
