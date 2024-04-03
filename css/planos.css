@@ -1,0 +1,216 @@
+.planos {
+    background-image: url(../img/section_planos.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: var(--fonte-principal);
+    padding: 1.5em 1.5em 1em 1.5em;
+    z-index: 700;
+    position: relative;
+
+}
+
+.planos__div1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.planos__titulo,
+.planos__titulo-titulo {
+    background: var(--degrade-verdeAzul);
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+}
+
+.planos__titulo-titulo {
+    font-size: 18px;
+    font-weight: 800;
+    padding: 0.1em;
+}
+
+.planos__lista {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.planos__linha {
+    background: var(--degrade-verdeAzul);
+    background-clip: padding-box;
+    margin: 0.3em 0 2em 0;
+    width: 40%;
+    height: 1.6px;
+    -webkit-background-clip: padding-box;
+
+}
+
+.planos__plano {
+    font-family: var(--fonte-secdundaria);
+}
+
+.planos_card {
+    align-items: center;
+    background: var(--degrade-terceiro);
+    border-radius: 10px;
+    color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    padding: 1em 2em 0em 2em;
+    position: relative;
+    margin-bottom: 4em;
+    box-shadow: 0px 0px 10px 5px var(--cinza);
+}
+
+.planos__plano1,
+.planos__plano2 {
+    font-family: var(--fonte-secundaria);
+}
+
+.planos__plano1 {
+    font-size: 6em;
+    position: relative;
+
+}
+
+.planos__plano2 {
+    font-size: 0.2em;
+    background: var(--degrade-verdeAzul);
+    position: absolute;
+    left: 43%;
+    top: 40%;
+    border-radius: 2px;
+    padding: 2px;
+}
+
+.planos__texto {
+    font-size: 15px;
+    font-weight: 200;
+}
+
+/* icones */
+.icone--donwload {
+    content: url(../img/planos/download.svg);
+    width: 1.9em;
+}
+
+.icone--upload {
+    content: url(../img/planos/upload.svg);
+    width: 1.9em;
+}
+
+.icone--suporte {
+    content: url(../img/planos/support.svg);
+    width: 1.6em;
+}
+
+.icone--fibra {
+    content: url(../img/planos/fibra.svg);
+    width: 1.5em;
+}
+
+.icone--instalacao {
+    content: url(../img/planos/instalação.svg.svg);
+    width: 1.5em;
+}
+
+.planos__lista-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.planos-plano-preco {
+    text-shadow: 0px 2px 10px var(--azul);
+    font-size: 2em;
+    font-weight: 700;
+    margin: 0.6em 0 1em 0;
+}
+
+.planos-plano-preco-fracao {
+    font-size: 14px;
+}
+
+.planos__botao {
+    background: var(--verde-secundario);
+    padding: 0.8em 0.5em;
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 3px -1px 10px 0.5px var(--azul-claro);
+    color: var(--branco);
+    font-weight: 600;
+    position: absolute;
+    bottom: -16px;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.planos__plano200 {
+    /* é o MEGA  de 200mb dos planos, precisou ser estilizado separado pois não encaixou bem no "200" como nos demais*/
+    font-size: 0.2em;
+    background: var(--degrade-verdeAzul);
+    position: absolute;
+    left: 52%;
+    top: 40%;
+    border-radius: 2px;
+    padding: 2px;
+
+}
+
+.planos__card-icone200 {
+    content: url(../img/planos/estrela.png);
+    width: 20%;
+    position: absolute;
+    top: -7%;
+    right: -7%;
+    box-shadow: 2px -2px 6px 2px var(--cinza);
+    border-radius: 50%;
+}
+
+/* tablet*/
+@media screen and (min-width: 728px) {
+   
+
+    .planos {
+        flex-direction: column;        
+    }
+
+    .planos__div2 {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 15px; 
+             
+    }
+
+    .planos__titulo,
+    .planos__titulo-titulo {
+        font-size: 32px;
+        /* em px pq em "em" tava dando bug*/
+    }
+
+    .planos_card{ position: relative;
+        z-index: 888; 
+        
+    }
+
+}
+
+/* desktop */
+@media screen and (min-width: 1028px) {
+    .planos__div2 {        
+        gap: 40px
+    }
+
+    .planos__botao:hover {
+        background: var(--verde-hover);
+        
+    }
+}

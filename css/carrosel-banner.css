@@ -1,0 +1,280 @@
+
+.swiper {
+    font-family: var(--fonte-principal);
+}
+
+.swiper-slide {
+    background-image: url(../img/planos\ -\ slide1.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.separado-filho {
+    padding: 1em;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.swiper__texto,
+.info-1__descricao,
+.swiper__info-2,
+.preco1,
+.preco2 {
+    text-transform: uppercase;
+    color: var(--branco);
+    font-weight: 500;
+
+}
+
+.simbolo {
+    content: url(../img/icon\ garatia.png);
+    width: 8%;
+    position: absolute;
+}
+
+.swiper__decor-1,
+.swiper__decor-2,
+.info-2__texto1,
+.preco-mes {
+    text-transform: uppercase;
+    color: var(--verde-secundario);
+}
+
+
+.swiper__titulo,
+.swiper__mega,
+.swiper__plano {
+    font-family: var(--fonte-secundaria);
+    color: var(--branco);
+}
+
+
+.spam-acessibilididade {
+    /*esconde o span*/
+    display: none;
+    text-transform: uppercase;
+}
+
+.swiper__texto {
+    margin-bottom: 1em;
+    font-size: 13px;
+}
+
+.swiper__titulo {
+    font-size: 14px;
+
+}
+
+.swiper__mega {
+    font-size: 4.5em;
+    font-weight: 800;
+    position: relative;
+}
+
+.info-1__descricao {
+    border: solid 1px var(--verde-secundario);
+    border-radius: 10px;
+    padding: 1em;
+    font-size: 10px;
+    font-weight: 400;
+    margin: 0.5em 0;
+}
+
+.swiper__plano {
+    padding: 0.2em;
+    border-radius: 2px;
+    background: var(--degrade-verdeAzul);
+    font-size: 12px;
+    position: absolute;
+    left: 55%;
+    bottom: 39%;
+}
+
+.swiper__info-1 {
+    position: relative;
+}
+
+.swiper__info-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 3px;
+}
+
+.swiper__info-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+
+.preco-mes {
+    font-weight: 600;
+}
+
+.divisao {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+
+.preco1 {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.info-2__texto1 {
+    
+    font-size: 10px;
+    font-weight: 600;
+
+}
+
+.info-2__texto2 {
+    /*CIFRÃO*/
+    font-size: 1.5em;
+    font-weight: 800;
+
+}
+
+
+.swiper__botao {
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    width: 30vw;
+    background: var(--verde-secundario);
+    padding: 1em;
+    color: var(--branco);
+    text-transform: uppercase;
+    border-radius: 10px;
+    box-shadow: 2px -3px 10px 1px var(--black);
+    transition: all 0.5s;
+}
+
+/* tablet */
+@media screen and (min-width: 728px) {
+    .swiper__titulo {
+        font-size: 16px;
+    }
+
+    .swiper__texto {
+        padding: 1.5em;
+        font-size: 1.4em;
+        font-weight: 600;
+    }
+    .swiper__titulo{
+        font-size: 1.4em;
+    }
+    .swiper__plano{
+        font-size: 0.2em;
+        left: 52%;
+    }
+
+    .swiper__mega {
+        font-size: 8em;
+    }
+
+    .info-1__descricao {
+        font-size: 13px;
+    }
+
+    .info-1__descricao{
+        font-size:0.9em ;
+    }
+
+    .simbolo {
+        width: 1.3em;
+        left: -6%;
+    }
+
+    .divisao {
+        font-size: 2em;
+    }
+
+    .separado-filho {
+        padding: 1.8em;
+    }
+
+    .info-2__texto1{
+        font-size: 0.6em;
+    }
+
+
+}
+
+@media screen and (min-width: 1028px){
+    .swiper-slide {
+        height: 85vh;
+       
+    }
+   
+    .swiper__titulo {
+        font-size: 2em;
+    }
+    .swiper__plano{
+      font-size: 0.2em;
+      left: 53%;
+
+    }
+
+    .swiper__texto {
+        font-size: 1.8em;
+        font-weight: 600;
+    }
+
+    .swiper__mega {
+        font-size: 9em;
+    }
+
+    .info-1__descricao {
+        font-size: 1em;
+    }
+
+    .simbolo {
+        width: 1.5em;
+        left: -4%;
+    }
+
+    .divisao {
+        font-size: 1.8em;
+    }
+
+    .separado-filho {
+        margin-top: 90px;
+        width: 40%;
+        align-items: center;
+        text-align: center;
+        padding: 2em;        
+    }
+
+    .swiper__botao {
+        font-size: 18px;
+        font-weight: 600;
+        width: 20vw;
+    }
+
+    .info-2__texto1{
+        font-size: 0.5em;
+    }
+
+    .swiper__texto{
+        padding: 0 6em;
+        margin-bottom: 40px;
+        font-size: 28px;
+    }
+
+    .swiper__botao:hover {        
+        background: var(--verde-hover);        
+    }
+
+}

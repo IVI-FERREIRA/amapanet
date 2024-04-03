@@ -1,0 +1,6 @@
+
+.degrade{
+    background: var(--degrade-verdeAzul);  
+    height: 1rem;
+    width: 100%;
+}

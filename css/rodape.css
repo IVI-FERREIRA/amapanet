@@ -1,0 +1,178 @@
+.linha__verde {
+    background: var(--verde-secundario);
+    background-clip: padding-box;
+    width: 100%;
+    height: 20px;
+    -webkit-background-clip: padding-box;
+}
+
+/* ----------------------------------------------- */
+
+.rodape__container {
+    background: var(--azul);
+    width: 100%;
+    height: 10vh;
+    font-family: var(--fonte-principal);
+    padding-bottom: 40px;
+
+}
+
+
+.rodape__container {
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    color: var(--branco);
+    display: flex;
+
+    font-size: 10px;
+}
+
+.icone--endereco {
+    content: url(../img/rodape/endereço-svg.svg);
+    width: 1.5em;
+}
+
+.icone--telefone {
+    content: url(../img/rodape/telefone-svg.svg);
+    width: 1.5em;
+}
+
+.icone--email {
+    content: url(../img/rodape/email-svg.svg);
+    width: 1.5em;
+}
+
+
+.divisão__rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rodape__lista {
+    align-items: center;
+    display: flex;
+    margin: 0.8em 0 0.5em 0;
+}
+
+
+/* margem entre o icone e o texto */
+.rodape__lista-icone {
+    margin-right: 2px;
+
+}
+
+.rodape__lista-item {
+    color: var(--branco);
+    display: flex;
+    align-items: center;
+}
+
+.rodape__redes {
+    display: flex;
+    gap: 20px;
+}
+
+.rodape__icone-instagram {
+    content: url(../img/rodape/instagram.svg);
+    width: 3em;
+}
+
+.rodape__icone-facebook {
+    content: url(../img/rodape/facebook.svg);
+    width: 3em;
+}
+
+.rodape__icone-whatsapp {
+    content: url(../img/rodape/whatsapp.svg);
+    width: 3em;
+}
+
+
+
+.copy {
+    margin-top: 20px;
+    font-size: 5px;
+}
+
+/* tablet*/
+@media screen and (min-width: 728px) {
+    body {
+        padding-bottom: 0;
+    }
+
+    .rodape__container {
+        font-size: 1.3em;
+        height: 20vh;
+
+    }
+
+    .copy {
+        font-size: 0.7em;
+    }
+
+    .rodape__container {
+        padding-bottom: initial;
+
+    }
+
+    @keyframes pulsar {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    
+    .whatsapp .list__itens {
+        display: flex;
+        animation: pulsar 2s infinite;
+        transition: transform 0.5s ease-in-out;
+       
+    }
+
+
+}
+
+/* desktop */
+@media screen and (min-width: 1028px) {
+    .rodape__container {
+        justify-content: space-evenly;
+        flex-direction: row;
+        font-size: 20px;
+        text-align: flex-start;
+    }
+
+    .rodape__div {
+        border-left: solid 1px var(--branco);
+        padding-left: 1em;
+
+    }
+
+    .divisão__rodape {
+        border-right: solid 1px var(--branco);       
+        padding-right: 1em;
+    }
+
+    .rodape__container {
+        padding: 2em 0;
+
+    }
+
+    .copy {
+        font-size: 0.7em;
+        margin-top: 40px;
+    }
+
+
+
+
+
+
+
+}

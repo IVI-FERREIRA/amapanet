@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmapaNet</title>
+    <link rel="icon" type="image/png" href="./img/favicom.png">
+
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Estyle -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./css/degrade.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/carrosel-banner.css">
+    <link rel="stylesheet" href="./css/cards.css">
+    <link rel="stylesheet" href="./css/planos.css">
+    <link rel="stylesheet" href="./css/contatoEmail.css">
+    <link rel="stylesheet" href="./css/cobertura.css">
+    <link rel="stylesheet" href="./css/endereco.css">
+    <link rel="stylesheet" href="./css/rodape.css">
+</head>
+
+
+<body>
+
+    <div class="degrade"></div>
+    <header class="cabecalho">
+        <div class="container">
+            <div class="cabecalho__div">
+                <img class="logo__icon" src="./img/outras/logo.svg" alt="Logo AmapaNet">
+                <div class="logo__texto">
+                    <h1 class="logo__titulo">AmapáNet</h1>
+                    <p class="logo__subTitulo">Telecom e Tecnologia</p>
+                </div>
+            </div>
+
+
+            <nav class="container__nav">
+                <ul class="list__nav">
+                    <li class="list">
+                        <a class="list__itens" href="#">
+                            <i class="home-item icone__nav"></i>
+                            <span class="list__texto">Inicio</span></a>
+                    </li>
+
+                    <li class="list">
+                        <a class="list__itens" href="#planos">
+                            <i class="planos-item icone__nav"></i>
+                            <span class="list__texto">Planos</span>
+                        </a>
+                    </li>
+
+
+                    <li class="list whatsapp">
+                        <a class="list__itens " href="#">
+                            <i class="contato-item icone__nav"></i>
+                            <span class="list__texto fale__conosco">Fale conosco</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <a class="list__itens" href="#">
+                    <span class="list__texto  area__cliente">Área do cliente</span>
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main class="main">
+        <!--Carrosel -->
+        <section class="swiper"> <!--PARA APLICAR API swiperjs -->
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+
+                    <!-- CARD DOS PLANOS -->
+                    <div class="separado-filho">
+                        <p class="swiper__texto"><span class="swiper__decor-1">Experimente</span> o que há de novo
+                            em <span class="swiper__decor-2">Tecnologia</span>
+                        </p>
+                        <h2 class="swiper__titulo">Plano Recomendado</h2>
+                        <p class="swiper__mega">200<span class="swiper__plano">MEGA</span></p>
+
+                        <div class="swiper__info-1">
+                            <i class="simbolo"></i>
+                            <p class="info-1__descricao">Sem burocracia</p>
+                        </div>
+
+                        <div class="divisao"> <!-- DIV PARA ORGANIZAR O LAYOUT DE PREÇO -->
+
+                            <div class="swiper__info-2">
+                                <p class="info-2__texto1">apenas</p>
+                                <p class="info-2__texto2">R$</p>
+                            </div>
+                            <p class="preco1">99</p>
+                            <div class="swiper__info-3">
+                                <sub class="preco2">,99</sub>
+                                <p class="preco-mes">/mês</p>
+                            </div>
+                        </div>
+                        <a class="swiper__botao" href="#">Contratar Plano <span class="spam-acessibilididade">200
+                                MEGA por 99,99 por mes</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- .................. -->
+
+            </div>
+        </section>
+
+
+
+
+        <section class="card__container">
+
+            <ul class="card__container-lista">
+
+                <li class="card__lista__itens">
+                    <i class="card__lista__icone icone--cifrao"></i>
+                    <p class="card__list__texto">MELHOR CUSTO E BENEFÍCIO</p>
+                </li>
+
+                <li class="card__lista__itens">
+                    <i class="card__lista__icone icone--pipoca"></i>
+                    <p class="card__list__texto">FILMES E SÉRIES SEM TRAVAR</p>
+                </li>
+
+                <li class="card__lista__itens">
+                    <i class="card__lista__icone icone--casa"></i>
+                    <p class="card__list__texto">SUPORTE PARA SUA RESIDENCIA/EMPRESA</p>
+                </li>
+
+            </ul>
+        </section>
+
+        <section id="planos" class="planos">
+            <div class="planos__div1">
+                <h3 class="planos__titulo">conheça nossos <spam class="planos__titulo-titulo">Planos</spam>
+                </h3>
+                <div class="planos__linha"></div>
+            </div>
+
+            <div class="planos__div2">
+                <div class="planos_card">
+                    <h4 class="planos__plano1">100<spam class="planos__plano2">mega</spam>
+                    </h4>
+
+                    <ul class="planos__lista">
+                        <li class="planos__lista-item">
+                            <i class="planos__icone icone--donwload"></i>
+                            <p class="planos__texto">Download 100 mbps</p>
+                        </li>
+
+                        <li class="planos__lista-item">
+                            <i class="planos__icone icone--upload"></i>
+                            <p class="planos__texto">Upload até 80mbps</p>
+                        </li>
+
+                        <li class="planos__lista-item">
+                            <i class="planos__icone icone--suporte"></i>
+                            <p class="planos__texto">Suporte Rápido</p>
+                        </li>
+
+                        <li class="planos__lista-item">
+                            <i class="planos__icone icone--fibra"></i>
+                            <p class="planos__texto">100% Fibra ópitca</p>
+                        </li>
+
+                        <li class="planos__lista-item">
+                            <i class="planos__icone icone--instalacao"></i>
+                            <p class="planos__texto">Instalação Grátis</p>
+                        </li>
+
+
+                    </ul>
+                    <p class="planos-plano-preco">R$ 79<sup class="planos-plano-preco-fracao">,99</sup></p>
+                    <a class="planos__botao" href="#">Contratar Plano <span class="spam-acessibilididade">por
+                            79,99</span>
+                    </a>
+                </div>
+
+                <div class="planos_card">
+                    <h4 class="planos__plano1">150<spam class="planos__plano2">mega</spam>
+                    </h4>
+
+                    <ul class="planos__lista">
+                        <li class="planos__lista-item">
+                            <i class="planos__icone icone--donwload"></i>
+                            <p class="planos__texto">Download 150 mbps</p>
+                        </li>
+
+                        <li class="planos__lista-item">
+                            <i class="planos__icone icone--upload"></i>
+                            <p class="planos__texto">Upload até 100 mbps</p>
+                        </li>
+
+                        <li class="planos__lista-item">
+                            <i class="planos__icone icone--suporte"></i>
+                            <p class="planos__texto">Suporte Rápido</p>
+                        </li>
+
+                        <li class="planos__lista-item">
+                            <i class="planos__icone icone--fibra"></i>
+                            <p class="planos__texto">100% Fibra ópitca</p>
+                        </li>
+
+                        <li class="planos__lista-item">
+                            <i class="planos__icone icone--instalacao"></i>
+                            <p class="planos__texto">Instalação Grátis</p>
+                        </li>
+
+
+                    </ul>
+                    <p class="planos-plano-preco">R$ 89<sup class="planos-plano-preco-fracao">,99</sup></p>
+                    <a class="planos__botao" href="#">Contratar Plano <span class="spam-acessibilididade">por
+                            89,99</span>
+                    </a>
+                </div>
+
+                <div class="planos_card">
+                    <i class="planos__card-icone200"></i>
+                    <h4 class="planos__plano1">200<spam class="planos__plano200">mega</spam>
+                    </h4>
+
+                    <ul class="planos__lista">
+                        <li class="planos__lista-item">
+                            <i class="planos__icone icone--donwload"></i>
+                            <p class="planos__texto">Download 200 mbps</p>
+                        </li>
+
+                        <li class="planos__lista-item">
+                            <i class="planos__icone icone--upload"></i>
+                            <p class="planos__texto">Upload até 150 mbps</p>
+                        </li>
+
+                        <li class="planos__lista-item">
+                            <i class="planos__icone icone--suporte"></i>
+                            <p class="planos__texto">Suporte Rápido</p>
+                        </li>
+
+                        <li class="planos__lista-item">
+                            <i class="planos__icone icone--fibra"></i>
+                            <p class="planos__texto">100% Fibra ópitca</p>
+                        </li>
+
+                        <li class="planos__lista-item">
+                            <i class="planos__icone icone--instalacao"></i>
+                            <p class="planos__texto">Instalação Grátis</p>
+                        </li>
+
+
+                    </ul>
+                    <p class="planos-plano-preco">R$ 99<sup class="planos-plano-preco-fracao">,99</sup></p>
+                    <a class="planos__botao" href="#">Contratar Plano <span class="spam-acessibilididade">por
+                            79,00</span>
+                    </a>
+                </div>
+            </div>
+            </div>
+
+        </section>
+
+
+
+        <section class="endereco__container">
+            <h5 class="endereco__titulo1">NOS FAÇA <span class="endereco__titulo2">UMA VISITA</span></h5>
+            <ul class="endereco__lista">
+                <li class="endereco__item1">PLANOS ACESSÍVEIS</li>
+                <li class="endereco__item2">ATENDIMENTO DE QUALIDADE</li>
+                <li class="endereco__item3">CAFÉ QUENTINHO</li>
+            </ul>
+
+            <div class="endereco__mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.8181256503226!2d-51.07389169999998!3d0.01789930000000528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8d61e1be09f6de7d%3A0xee2e2ea0955f3e25!2sR.%20Santos%20Dumont%2C%202114%20-%20Santa%20Rita%2C%20Macap%C3%A1%20-%20AP%2C%2068901-270!5e0!3m2!1spt-BR!2sbr!4v1711914491053!5m2!1spt-BR!2sbr"
+                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+        </section>
+    </main>
+
+    <div class="linha__verde"></div> <!-- estilizado com o rodape-->
+
+    <footer class="rodape__container">
+        <div class="rodape__div">
+            <ul class="rodape__lista-lista">
+                <li class="rodape__lista">
+                    <a href="" class="rodape__lista-item"><i class="rodape__lista-icone icone--endereco"></i>R. Santos
+                        Dumont, 2114 Sala B - Santa Rita</a>
+                </li>
+
+            </ul>
+
+            <ul class="rodape__lista-lista">
+                <li class="rodape__lista">
+                    <a href="" class="rodape__lista-item"><i class="rodape__lista-icone icone--telefone"></i>(xx)
+                        xxxx-xxxx</a>
+                </li>
+
+            </ul>
+
+            <ul class="rodape__lista-lista">
+                <li class="rodape__lista">
+                    <a href="" class="rodape__lista-item"><i
+                            class="rodape__lista-icone icone--email"></i>falecom@amapanet.com</a>
+                </li>
+            </ul>
+
+
+        </div>
+
+
+        <div class="divisão__rodape">
+            <div class="rodape__redes">
+                <a class="rodape-link" href=""><i class="rodape__icone-instagram"></i></a>
+                <a class="rodape-link" href=""><i class="rodape__icone-facebook"></i></a>
+                <a class="rodape-link" href=""><i class="rodape__icone-whatsapp"></i></a>
+            </div>
+            <p class="copy">AmapáNet&copy; 2024. Todos os direitos reservados.</p>
+
+        </div>
+
+
+    </footer>
+
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+</body>
+
+</html>
