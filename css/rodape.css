@@ -1,216 +1,286 @@
-.linha__verde {
-    background: var(--verde-secundario);
-    background-clip: padding-box;
-    width: 100%;
-    height: 20px;
-    -webkit-background-clip: padding-box;
+.caixa__footer {
+    padding-bottom: 5px;
 }
 
-/* ----------------------------------------------- */
-
-.rodape__container {
-    background: var(--azul);
-    width: 100%;
-    height: 30vh;
+.conteiner__footer {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('../img/rodape/footer.jpg') center center no-repeat;
+    background-size: cover;
     font-family: var(--fonte-principal);
-    padding-bottom: 20px; 
-    align-items: baseline;
-    text-align:start;    
-    justify-content: space-around;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container__primeiro {
+    display: flex;
+    flex-direction: column;
+    align-items: space-evenly;
+    border-top: solid 1px var(--cinza);
+    width: 100%;    
+    padding-top: 1.5em;
+}
+
+.text-light {
     color: var(--branco);
-    display: flex;
-    font-size: 10px;
 }
 
-.container__partes{
+.rodape__links {
     display: flex;
-    flex-direction: column;
+    align-items: center;
 }
 
-.rodape__div{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: last baseline;
-    
-}
-
-.bairros__titulo{
+.rodape__titulo1,
+.titulo__compre-oline,
+.privacidade_titulo {
     font-size: 15px;
     font-weight: 500;
-    color: var(--verde-secundario);
-    margin-bottom: 5px;
+    color: var(--branco);
+    margin-bottom: 0.3em;
+
 }
 
-.rodape__bairros
-
-.bairros{
+.rodape__lista,
+.texto__compre-oline,
+.privacidade__texto {
+    color: var(--branco);
+    font-weight: 200;
+    font-size: 12px;
     margin-bottom: 10px;
+    display: flex;
+    gap: 5px
 }
 
-.bairros__lista {
-    overflow-y: scroll;
-    height: 200px;
-    scrollbar-width: thin; /* Para Firefox */
-    scrollbar-color: #00C693 #f1f1f1; /* Para Firefox */
-} 
+.titulo__compre-oline {
+    margin-top: 10px;
+}
 
+.privacidade_titulo {
+    margin-top: 20px;
+}
+
+
+/* icones e margem entre eles */
+/* icones rede social */
+.rodape__icone{
+    margin-right: 10px;
+}
+.rodape__icone-insta{
+    width: 30px;
+}
+.rodape__icone-whats{
+    width: 40px;
+}
+
+.rodape__icone-face{
+    width: 30px;
+}
+.rodape__icone-email{
+    width: 40px;
+}
+
+
+/* icones rede não social */
 .icone--endereco {
     content: url(../img/rodape/endereço-svg.svg);
-    width: 1.5em;
+    width: 1em;
 }
 
 .icone--telefone {
     content: url(../img/rodape/telefone-svg.svg);
-    width: 1.5em;
+    width: 1em;
 }
 
 .icone--email {
     content: url(../img/rodape/email-svg.svg);
-    width: 1.5em;
+    width: 1em;
 }
 
 
-.divisão__rodape {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.rodape__lista {
-    align-items: center;
-    display: flex;
-    margin: 0.8em 0 0.5em 0;
-}
-
-
-/* margem entre o icone e o texto */
-.rodape__lista-icone {
-    margin-right: 2px;
-
-}
-
-.rodape__lista-item {
-    color: var(--branco);
-    display: flex;
-    align-items: center;
-}
-
-.rodape__redes {
-    display: flex;
-    gap: 20px;
+/* BAIRROS ATENDIDOS */
+.bairros__titulo {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--verde-secundario);
+    margin-bottom: 15px;
     margin-top: 15px;
 }
 
-.rodape__icone-instagram {
-    content: url(../img/rodape/instagram.svg);
-    width: 3em;
+
+.rodape__bairros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
 }
 
-.rodape__icone-facebook {
-    content: url(../img/rodape/facebook.svg);
-    width: 3em;
+.bairros__lista {  
+    font-size: 10px;
+    height: 10em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;    
+    flex-wrap: wrap;
+    gap:10px;
+    color: var(--branco)
 }
 
-.rodape__icone-whatsapp {
-    content: url(../img/rodape/whatsapp.svg);
-    width: 3em;
+/* alinhamento do copy */
+.copyright_text {
+    color: var(--branco);
+    font-size: 9px;
+    margin-top: 30px;
+      
+}
+
+.amapanet__copy {
+    color: var(--verde);
+    font-weight: 600;
 }
 
 
 
+/* TABLET */
+@media screen and (min-width: 728px){  
 
-.copy {
-    margin-top: 20px;
-    font-size: 5px;
-}
-
-/* tablet*/
-@media screen and (min-width: 728px) {
-    body {
+    .caixa__footer {
         padding-bottom: 0;
+        padding-left: 0;
+      
     }
-
-    .rodape__container {
-        font-size: 1.3em;
-        height: 35vh;
-
+    .container__primeiro {       
+        flex-direction: initial;
+        align-items: initial;
+        justify-content: center;             
+        padding-top: 3em;
     }
-
-    .copy {
-        font-size: 0.7em;
-    }
-
-    .rodape__container {
-        padding-bottom: initial;
-
-    }
-
-    .bairros__titulo{
-        font-size: 30px;
-        margin-bottom: 10px;
-    }
-
-    .bairros__lista{
-        height: 250px;
-    }
-
-    @keyframes pulsar {
-        0% {
-            transform: scale(1);
-        }
-        50% {
-            transform: scale(1.1);
-        }
-        100% {
-            transform: scale(1);
-        }
+    .rodape__titulo1,
+    .titulo__compre-oline,
+    .privacidade_titulo {
+        font-size: 17px;
     }
     
-    .whatsapp .list__itens {
-        display: flex;
-        animation: pulsar 2s infinite;
-        transition: transform 0.5s ease-in-out;
-       
+    .rodape__lista,
+    .texto__compre-oline,
+    .privacidade__texto {              
+        font-size: 15px;
     }
-
-
-}
-
-/* desktop */
-@media screen and (min-width: 1028px) {
-    .rodape__container {
-        justify-content: space-evenly;
-        flex-direction: row;
-        font-size: 20px;
-        text-align: flex-start;
+    
+    .titulo__compre-oline {
+        margin-top: 0;
     }
-
-    .rodape__div {
-        border-left: solid 1px var(--branco);
-        padding-left: 1em;
-
-    }
-
-    .divisão__rodape {
-        border-right: solid 1px var(--branco);       
-        padding-right: 1em;
-    }
-
-    .rodape__container {
-        padding: 2em 0;
-
-    }
-
-    .copy {
-        font-size: 0.7em;
+    
+    .privacidade_titulo {
         margin-top: 40px;
     }
 
+    /* BAIRROS ATENDIDOS */
+    .bairros__titulo {
+        font-size: 19px;
+        font-weight: 600;        
+        margin-top: 0;
+    }
+
+    .compre__oline{
+        width: 30%;
+        padding: 0 1em;
+    }
+    
+    
+    .rodape__bairros {
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+    }
+    
+    .bairros__lista {  
+        font-size: 13px;
+        padding: 0 0.5;
+        height: 11em;      
+        gap:5px;
+       
+        
+    }
+    
+    /* alinhamento do copy */
+    .copyright_text {
+        color: var(--branco);
+        font-size: 14px;
+    }
+    
+    .amapanet__copy {
+        color: var(--verde);
+        font-weight: 600;
+    }
+
+    body {
+       
+        padding-bottom: 0px;
+    }
+}
 
 
+/* desktop */
+@media screen and (min-width: 1028px){
+    .container__primeiro {  
+        width: 70%;     
+        flex-direction: initial;
+        align-items: initial;
+        justify-content: space-between;             
+        padding: 3em 1.5em 0.5em 1.5em ;
+    }
 
+    .conteiner__footer{
+        padding-top: 5em;
+        padding-bottom: 0;
+    }
+   
 
+    .titulo__compre-oline {
+        margin-top: 0;
+    }
+    
+    .privacidade_titulo {
+        margin-top: 40px;
+    }
 
+    /* BAIRROS ATENDIDOS */
+    .bairros__titulo {
+        width: initial;
+        font-size: 19px;
+        font-weight: 600;        
+        margin-top: 0;
+    }
+    
+    
+    .rodape__bairros {
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+    }
+    
+    .bairros__lista {  
+        font-size: 13px;
+        padding: 0 0.5;
+        height: 10em;      
+        gap:15px;
+    }
+    
+    /* alinhamento do copy */
+    .copyright_text {
+        color: var(--branco);
+        font-size: 10px;
+        margin: 20em 0 1em 0;
+    }
+    
+    .amapanet__copy {
+        color: var(--verde);
+        font-weight: 600;
+    }
+
+    .caixa__footer {
+        padding-bottom: 0px;
+    }
+
+    
 
 }
