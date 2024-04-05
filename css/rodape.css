@@ -148,10 +148,15 @@
       
     }
     .container__primeiro {       
-        flex-direction: initial;
-        align-items: initial;
-        justify-content: center;             
+        flex-direction: column;
+        align-items: center;
+        justify-content: initial;             
         padding-top: 3em;
+    }
+    .div__cima{
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 20px;
     }
     .rodape__titulo1,
     .titulo__compre-oline,
@@ -187,16 +192,18 @@
     
     
     .rodape__bairros {
+        width: 80%;
         display: flex;
         flex-direction: column;
-        align-items: center;   
+        align-items: center;        
     }
     
     .bairros__lista {  
         font-size: 13px;
-        padding: 0 0.5;
+        align-items: center;
         height: 11em;      
-        gap:5px;
+        gap:5px;        
+      
        
         
     }
@@ -217,6 +224,67 @@
         padding-bottom: 0px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* desktop */
@@ -253,16 +321,21 @@
     
     
     .rodape__bairros {
-        display: flex;
+        width: initial;       
         flex-direction: column;
         align-items: center;   
     }
+
+ 
+    
+ 
     
     .bairros__lista {  
         font-size: 13px;
-        padding: 0 0.5;
+        padding: 0 0.3em;
         height: 10em;      
         gap:15px;
+        
     }
     
     /* alinhamento do copy */
